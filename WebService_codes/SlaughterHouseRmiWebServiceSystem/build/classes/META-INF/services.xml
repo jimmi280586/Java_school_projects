@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.7.3  Built on : May 30, 2016 (04:08:57 BST) -->
+<serviceGroup>
+    <service name="Tracking">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="services.skeleton.TrackingMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">services.skeleton.TrackingSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="trackAnimal" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services">
+            <actionMapping>urn:trackAnimal</actionMapping>
+            <outputActionMapping>urn:trackAnimalResponse</outputActionMapping>
+        </operation>
+        <operation name="getAnimals" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services">
+            <actionMapping>urn:getAnimals</actionMapping>
+            <outputActionMapping>urn:getAnimalsResponse</outputActionMapping>
+        </operation>
+        <operation name="trackProduct" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services">
+            <actionMapping>urn:trackProduct</actionMapping>
+            <outputActionMapping>urn:trackProductResponse</outputActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

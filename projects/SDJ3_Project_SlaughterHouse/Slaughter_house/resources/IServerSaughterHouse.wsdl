@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://Service.java_t2" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns="http://Service.java_t2" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://Service.java_t2">
+            <xs:element name="recallPack">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="args0" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="recallPackResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="makeOrder">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="args0" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="args1" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="makeOrderResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getTray">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="args0" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getTrayResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getPart">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="args0" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getPartResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getAnimal">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="args0" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getAnimalResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="addTray">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="args0" nillable="true" type="xs:string"/>
+                        <xs:element name="args1" type="xs:double"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="addToTray">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="args0" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="args1" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="addPart">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="args0" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="args1" nillable="true" type="xs:string"/>
+                        <xs:element name="args2" type="xs:double"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="addOrder">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="args0" nillable="true" type="xs:string"/>
+                        <xs:element name="args1" type="xs:double"/>
+                        <xs:element minOccurs="0" name="args2" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="addAnimal">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="args0" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="args1" nillable="true" type="xs:string"/>
+                        <xs:element name="args2" type="xs:double"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getPartRequest">
+    <wsdl:part name="parameters" element="ns:getPart">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addTrayRequest">
+    <wsdl:part name="parameters" element="ns:addTray">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="makeOrderRequest">
+    <wsdl:part name="parameters" element="ns:makeOrder">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addAnimalRequest">
+    <wsdl:part name="parameters" element="ns:addAnimal">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getTrayRequest">
+    <wsdl:part name="parameters" element="ns:getTray">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getTrayResponse">
+    <wsdl:part name="parameters" element="ns:getTrayResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addPartRequest">
+    <wsdl:part name="parameters" element="ns:addPart">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="recallPackResponse">
+    <wsdl:part name="parameters" element="ns:recallPackResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="makeOrderResponse">
+    <wsdl:part name="parameters" element="ns:makeOrderResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="recallPackRequest">
+    <wsdl:part name="parameters" element="ns:recallPack">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getPartResponse">
+    <wsdl:part name="parameters" element="ns:getPartResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAnimalRequest">
+    <wsdl:part name="parameters" element="ns:getAnimal">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAnimalResponse">
+    <wsdl:part name="parameters" element="ns:getAnimalResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addOrderRequest">
+    <wsdl:part name="parameters" element="ns:addOrder">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addToTrayRequest">
+    <wsdl:part name="parameters" element="ns:addToTray">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="IServerSaughterHousePortType">
+    <wsdl:operation name="addAnimal">
+      <wsdl:input message="ns:addAnimalRequest" wsaw:Action="urn:addAnimal">
+    </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="recallPack">
+      <wsdl:input message="ns:recallPackRequest" wsaw:Action="urn:recallPack">
+    </wsdl:input>
+      <wsdl:output message="ns:recallPackResponse" wsaw:Action="urn:recallPackResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="makeOrder">
+      <wsdl:input message="ns:makeOrderRequest" wsaw:Action="urn:makeOrder">
+    </wsdl:input>
+      <wsdl:output message="ns:makeOrderResponse" wsaw:Action="urn:makeOrderResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTray">
+      <wsdl:input message="ns:getTrayRequest" wsaw:Action="urn:getTray">
+    </wsdl:input>
+      <wsdl:output message="ns:getTrayResponse" wsaw:Action="urn:getTrayResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addOrder">
+      <wsdl:input message="ns:addOrderRequest" wsaw:Action="urn:addOrder">
+    </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="getPart">
+      <wsdl:input message="ns:getPartRequest" wsaw:Action="urn:getPart">
+    </wsdl:input>
+      <wsdl:output message="ns:getPartResponse" wsaw:Action="urn:getPartResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addPart">
+      <wsdl:input message="ns:addPartRequest" wsaw:Action="urn:addPart">
+    </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="addTray">
+      <wsdl:input message="ns:addTrayRequest" wsaw:Action="urn:addTray">
+    </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="getAnimal">
+      <wsdl:input message="ns:getAnimalRequest" wsaw:Action="urn:getAnimal">
+    </wsdl:input>
+      <wsdl:output message="ns:getAnimalResponse" wsaw:Action="urn:getAnimalResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addToTray">
+      <wsdl:input message="ns:addToTrayRequest" wsaw:Action="urn:addToTray">
+    </wsdl:input>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="IServerSaughterHouseSoap11Binding" type="ns:IServerSaughterHousePortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="addAnimal">
+      <soap:operation soapAction="urn:addAnimal" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="recallPack">
+      <soap:operation soapAction="urn:recallPack" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="makeOrder">
+      <soap:operation soapAction="urn:makeOrder" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTray">
+      <soap:operation soapAction="urn:getTray" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addOrder">
+      <soap:operation soapAction="urn:addOrder" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="getPart">
+      <soap:operation soapAction="urn:getPart" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addPart">
+      <soap:operation soapAction="urn:addPart" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="addTray">
+      <soap:operation soapAction="urn:addTray" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="getAnimal">
+      <soap:operation soapAction="urn:getAnimal" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addToTray">
+      <soap:operation soapAction="urn:addToTray" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="IServerSaughterHouseSoap12Binding" type="ns:IServerSaughterHousePortType">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="addAnimal">
+      <soap12:operation soapAction="urn:addAnimal" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="recallPack">
+      <soap12:operation soapAction="urn:recallPack" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="makeOrder">
+      <soap12:operation soapAction="urn:makeOrder" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTray">
+      <soap12:operation soapAction="urn:getTray" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addOrder">
+      <soap12:operation soapAction="urn:addOrder" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="getPart">
+      <soap12:operation soapAction="urn:getPart" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addPart">
+      <soap12:operation soapAction="urn:addPart" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="addTray">
+      <soap12:operation soapAction="urn:addTray" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="getAnimal">
+      <soap12:operation soapAction="urn:getAnimal" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addToTray">
+      <soap12:operation soapAction="urn:addToTray" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="IServerSaughterHouseHttpBinding" type="ns:IServerSaughterHousePortType">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="addAnimal">
+      <http:operation location="addAnimal"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml"/>
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="recallPack">
+      <http:operation location="recallPack"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="makeOrder">
+      <http:operation location="makeOrder"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTray">
+      <http:operation location="getTray"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addOrder">
+      <http:operation location="addOrder"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml"/>
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="getPart">
+      <http:operation location="getPart"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addPart">
+      <http:operation location="addPart"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml"/>
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="addTray">
+      <http:operation location="addTray"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml"/>
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="getAnimal">
+      <http:operation location="getAnimal"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addToTray">
+      <http:operation location="addToTray"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml"/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IServerSaughterHouse">
+    <wsdl:port name="IServerSaughterHouseHttpSoap11Endpoint" binding="ns:IServerSaughterHouseSoap11Binding">
+      <soap:address location="http://localhost:8080/axis2/services/IServerSaughterHouse"/>
+    </wsdl:port>
+    <wsdl:port name="IServerSaughterHouseHttpSoap12Endpoint" binding="ns:IServerSaughterHouseSoap12Binding">
+      <soap12:address location="http://localhost:8080/axis2/services/IServerSaughterHouse"/>
+    </wsdl:port>
+    <wsdl:port name="IServerSaughterHouseHttpEndpoint" binding="ns:IServerSaughterHouseHttpBinding">
+      <http:address location="http://localhost:8080/axis2/services/IServerSaughterHouse"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

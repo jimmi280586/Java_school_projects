@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="AVL-Tree/|AVL-Tree/|Algorithms/|Assignment_2/|BackTracking/|BirthdayReminderHeap/|EventSimulation/|FarryEventSimulation/|Graph/|Heap/|HitBinarySearchTree/|LinkedBinaryBostTreeAssignment1/|LinkedBinarySearchTre/|LinkedBinaryTre/|Nim_Game_Assignment2/|RedBlackTree/|Sets/|Stack/|avl/" kind="src" path="src">
+		<attributes>
+			<attribute name="ignore_optional_problems" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src/Algorithms"/>
+	<classpathentry kind="src" path="src/Assignment_2"/>
+	<classpathentry kind="src" path="src/Stack"/>
+	<classpathentry kind="src" path="src/Sets"/>
+	<classpathentry kind="src" path="src/Nim_Game_Assignment2"/>
+	<classpathentry kind="src" path="src/LinkedBinaryTre"/>
+	<classpathentry kind="src" path="src/LinkedBinarySearchTre"/>
+	<classpathentry kind="src" path="src/LinkedBinaryBostTreeAssignment1"/>
+	<classpathentry kind="src" path="src/HitBinarySearchTree"/>
+	<classpathentry kind="src" path="src/Heap"/>
+	<classpathentry kind="src" path="src/Graph"/>
+	<classpathentry kind="src" path="src/EventSimulation"/>
+	<classpathentry kind="src" path="src/BackTracking"/>
+	<classpathentry kind="src" path="src/avl"/>
+	<classpathentry kind="src" path="exeptions"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

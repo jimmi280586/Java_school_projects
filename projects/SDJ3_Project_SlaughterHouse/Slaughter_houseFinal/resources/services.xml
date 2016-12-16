@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.7.3  Built on : May 30, 2016 (04:08:57 BST) -->
+<serviceGroup>
+    <service name="ISlaughterHouse">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="java_t2.service.skeleton.ISlaughterHouseMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">java_t2.service.skeleton.ISlaughterHouseSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="addAnimal" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.java_t2">
+            <actionMapping>urn:addAnimal</actionMapping>
+            <outputActionMapping>urn:addAnimalResponse</outputActionMapping>
+        </operation>
+        <operation name="newTray" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.java_t2">
+            <actionMapping>urn:newTray</actionMapping>
+            <outputActionMapping>urn:newTrayResponse</outputActionMapping>
+        </operation>
+        <operation name="getTray" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.java_t2">
+            <actionMapping>urn:getTray</actionMapping>
+            <outputActionMapping>urn:getTrayResponse</outputActionMapping>
+        </operation>
+        <operation name="newPart" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.java_t2">
+            <actionMapping>urn:newPart</actionMapping>
+            <outputActionMapping>urn:newPartResponse</outputActionMapping>
+        </operation>
+        <operation name="getCurrentWeight" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.java_t2">
+            <actionMapping>urn:getCurrentWeight</actionMapping>
+            <outputActionMapping>urn:getCurrentWeightResponse</outputActionMapping>
+        </operation>
+        <operation name="newOrder" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.java_t2">
+            <actionMapping>urn:newOrder</actionMapping>
+            <outputActionMapping>urn:newOrderResponse</outputActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

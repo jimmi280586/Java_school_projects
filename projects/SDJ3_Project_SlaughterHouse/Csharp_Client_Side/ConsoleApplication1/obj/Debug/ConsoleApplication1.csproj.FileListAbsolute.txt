@@ -1,0 +1,8 @@
+K:\src\java\Projects\SDJ3_Project_SlaughterHouse\Csharp_Client_Side\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+K:\src\java\Projects\SDJ3_Project_SlaughterHouse\Csharp_Client_Side\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+K:\src\java\Projects\SDJ3_Project_SlaughterHouse\Csharp_Client_Side\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+K:\src\java\Projects\SDJ3_Project_SlaughterHouse\Csharp_Client_Side\ConsoleApplication1\bin\Debug\Client_one.dll
+K:\src\java\Projects\SDJ3_Project_SlaughterHouse\Csharp_Client_Side\ConsoleApplication1\bin\Debug\Client_one.pdb
+K:\src\java\Projects\SDJ3_Project_SlaughterHouse\Csharp_Client_Side\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+K:\src\java\Projects\SDJ3_Project_SlaughterHouse\Csharp_Client_Side\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+K:\src\java\Projects\SDJ3_Project_SlaughterHouse\Csharp_Client_Side\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

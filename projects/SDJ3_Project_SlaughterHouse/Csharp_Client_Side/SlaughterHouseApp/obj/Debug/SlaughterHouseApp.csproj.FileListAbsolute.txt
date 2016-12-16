@@ -1,0 +1,9 @@
+K:\src\java\Projects\SDJ3_Project_SlaughterHouse\Csharp_Client_Side\SlaughterHouseApp\bin\Debug\SlaughterHouseApp.exe.config
+K:\src\java\Projects\SDJ3_Project_SlaughterHouse\Csharp_Client_Side\SlaughterHouseApp\bin\Debug\SlaughterHouseApp.exe
+K:\src\java\Projects\SDJ3_Project_SlaughterHouse\Csharp_Client_Side\SlaughterHouseApp\bin\Debug\SlaughterHouseApp.pdb
+K:\src\java\Projects\SDJ3_Project_SlaughterHouse\Csharp_Client_Side\SlaughterHouseApp\obj\Debug\SlaughterHouseApp.csprojResolveAssemblyReference.cache
+K:\src\java\Projects\SDJ3_Project_SlaughterHouse\Csharp_Client_Side\SlaughterHouseApp\obj\Debug\SlaughterHouseApp.Form1.resources
+K:\src\java\Projects\SDJ3_Project_SlaughterHouse\Csharp_Client_Side\SlaughterHouseApp\obj\Debug\SlaughterHouseApp.Properties.Resources.resources
+K:\src\java\Projects\SDJ3_Project_SlaughterHouse\Csharp_Client_Side\SlaughterHouseApp\obj\Debug\SlaughterHouseApp.csproj.GenerateResource.Cache
+K:\src\java\Projects\SDJ3_Project_SlaughterHouse\Csharp_Client_Side\SlaughterHouseApp\obj\Debug\SlaughterHouseApp.exe
+K:\src\java\Projects\SDJ3_Project_SlaughterHouse\Csharp_Client_Side\SlaughterHouseApp\obj\Debug\SlaughterHouseApp.pdb

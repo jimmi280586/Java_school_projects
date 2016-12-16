@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.7.3  Built on : May 30, 2016 (04:08:57 BST) -->
+<serviceGroup>
+    <service name="WS2">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="interfaces.skeleton.WS2MessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">interfaces.skeleton.WS2Skeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="reverse" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://interfaces">
+            <actionMapping>urn:reverse</actionMapping>
+            <outputActionMapping>urn:reverseResponse</outputActionMapping>
+        </operation>
+        <operation name="vat" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://interfaces">
+            <actionMapping>urn:vat</actionMapping>
+            <outputActionMapping>urn:vatResponse</outputActionMapping>
+        </operation>
+        <operation name="max" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://interfaces">
+            <actionMapping>urn:max</actionMapping>
+            <outputActionMapping>urn:maxResponse</outputActionMapping>
+        </operation>
+        <operation name="isLeap" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://interfaces">
+            <actionMapping>urn:isLeap</actionMapping>
+            <outputActionMapping>urn:isLeapResponse</outputActionMapping>
+        </operation>
+        <operation name="avg" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://interfaces">
+            <actionMapping>urn:avg</actionMapping>
+            <outputActionMapping>urn:avgResponse</outputActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

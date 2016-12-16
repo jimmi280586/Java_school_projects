@@ -1,0 +1,53 @@
+CREATE SCHEMA slaghterhouse;
+
+CREATE TABLE animal
+(
+animalID VARCHAR (50) NOT NULL UNIQUE PRIMARY KEY ,
+type VARCHAR (50),
+weight DOUBLE PRECISION 
+);
+
+CREATE TABLE part
+(
+animalID VARCHAR (50) NOT NULL,
+partID VARCHAR (50) NOT NULL UNIQUE PRIMARY KEY ,
+type VARCHAR (50) , 
+weight DOUBLE PRECISION  
+
+);
+
+CREATE TABLE tray(
+trayID VARCHAR (50) NOT NULL UNIQUE PRIMARY KEY,
+type VARCHAR (50) , 
+weight DOUBLE PRECISION , 
+maxWeight DOUBLE PRECISION
+);
+
+CREATE TABLE orders (
+orderID VARCHAR (50) NOT  NULL UNIQUE PRIMARY KEY,
+weight DOUBLE PRECISION ,
+type VARCHAR (50),
+numberOfParts INTEGER
+);
+
+INSERT INTO animal (animalID, type, weight) VALUES
+('PIGA26A6200', 'PIG', 120.23),
+('COWA26A6300', 'COW', 500.80);
+
+INSERT INTO part(animalID,partID, type, weight) VALUES
+('PIGA26A6200','leg', 'PIG', 120.23),
+('COWA26A6300','leg1', 'COW', 500.80);
+
+CREATE TABLE orderTrays(
+orderRef VARCHAR (50) ,
+partRef VARCHAR (50),
+FOREIGN KEY (orderRef) REFERENCES orders(orderID),
+FOREIGN KEY (partRef) REFERENCES part(partID)
+);
+
+CREATE TABLE trayParts(
+trayRef VARCHAR (50),
+partRef VARCHAR (50),
+FOREIGN KEY (trayRef) REFERENCES tray(trayID),
+FOREIGN KEY (partRef) REFERENCES part(partID)
+);

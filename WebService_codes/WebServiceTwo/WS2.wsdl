@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns="http://interfaces" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" targetNamespace="http://interfaces">
+    <wsdl:types>
+        <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://interfaces">
+            <xs:element name="vat">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="args0" type="xs:double"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="vatResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="return" type="xs:double"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="reverse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="args0" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="reverseResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="max">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="args0" type="xs:int"/>
+                        <xs:element name="args1" type="xs:int"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="maxResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="return" type="xs:int"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="isLeap">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="args0" type="xs:int"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="isLeapResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="return" type="xs:boolean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="avg">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="args0" type="xs:int"/>
+                        <xs:element name="args1" type="xs:int"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="avgResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="return" type="xs:int"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="avgRequest">
+        <wsdl:part name="parameters" element="ns:avg"/>
+    </wsdl:message>
+    <wsdl:message name="avgResponse">
+        <wsdl:part name="parameters" element="ns:avgResponse"/>
+    </wsdl:message>
+    <wsdl:message name="maxRequest">
+        <wsdl:part name="parameters" element="ns:max"/>
+    </wsdl:message>
+    <wsdl:message name="maxResponse">
+        <wsdl:part name="parameters" element="ns:maxResponse"/>
+    </wsdl:message>
+    <wsdl:message name="isLeapRequest">
+        <wsdl:part name="parameters" element="ns:isLeap"/>
+    </wsdl:message>
+    <wsdl:message name="isLeapResponse">
+        <wsdl:part name="parameters" element="ns:isLeapResponse"/>
+    </wsdl:message>
+    <wsdl:message name="vatRequest">
+        <wsdl:part name="parameters" element="ns:vat"/>
+    </wsdl:message>
+    <wsdl:message name="vatResponse">
+        <wsdl:part name="parameters" element="ns:vatResponse"/>
+    </wsdl:message>
+    <wsdl:message name="reverseRequest">
+        <wsdl:part name="parameters" element="ns:reverse"/>
+    </wsdl:message>
+    <wsdl:message name="reverseResponse">
+        <wsdl:part name="parameters" element="ns:reverseResponse"/>
+    </wsdl:message>
+    <wsdl:portType name="WS2PortType">
+        <wsdl:operation name="avg">
+            <wsdl:input message="ns:avgRequest" wsaw:Action="urn:avg"/>
+            <wsdl:output message="ns:avgResponse" wsaw:Action="urn:avgResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="max">
+            <wsdl:input message="ns:maxRequest" wsaw:Action="urn:max"/>
+            <wsdl:output message="ns:maxResponse" wsaw:Action="urn:maxResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="isLeap">
+            <wsdl:input message="ns:isLeapRequest" wsaw:Action="urn:isLeap"/>
+            <wsdl:output message="ns:isLeapResponse" wsaw:Action="urn:isLeapResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="vat">
+            <wsdl:input message="ns:vatRequest" wsaw:Action="urn:vat"/>
+            <wsdl:output message="ns:vatResponse" wsaw:Action="urn:vatResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="reverse">
+            <wsdl:input message="ns:reverseRequest" wsaw:Action="urn:reverse"/>
+            <wsdl:output message="ns:reverseResponse" wsaw:Action="urn:reverseResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="WS2Soap11Binding" type="ns:WS2PortType">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="avg">
+            <soap:operation soapAction="urn:avg" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="max">
+            <soap:operation soapAction="urn:max" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="isLeap">
+            <soap:operation soapAction="urn:isLeap" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="vat">
+            <soap:operation soapAction="urn:vat" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="reverse">
+            <soap:operation soapAction="urn:reverse" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="WS2Soap12Binding" type="ns:WS2PortType">
+        <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="avg">
+            <soap12:operation soapAction="urn:avg" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="max">
+            <soap12:operation soapAction="urn:max" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="isLeap">
+            <soap12:operation soapAction="urn:isLeap" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="vat">
+            <soap12:operation soapAction="urn:vat" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="reverse">
+            <soap12:operation soapAction="urn:reverse" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="WS2HttpBinding" type="ns:WS2PortType">
+        <http:binding verb="POST"/>
+        <wsdl:operation name="avg">
+            <http:operation location="avg"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="max">
+            <http:operation location="max"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="isLeap">
+            <http:operation location="isLeap"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="vat">
+            <http:operation location="vat"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="reverse">
+            <http:operation location="reverse"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="WS2">
+        <wsdl:port name="WS2HttpSoap11Endpoint" binding="ns:WS2Soap11Binding">
+            <soap:address location="http://localhost:8080/axis2/services/WS2"/>
+        </wsdl:port>
+        <wsdl:port name="WS2HttpSoap12Endpoint" binding="ns:WS2Soap12Binding">
+            <soap12:address location="http://localhost:8080/axis2/services/WS2"/>
+        </wsdl:port>
+        <wsdl:port name="WS2HttpEndpoint" binding="ns:WS2HttpBinding">
+            <http:address location="http://localhost:8080/axis2/services/WS2"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

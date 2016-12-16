@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.7.3  Built on : May 30, 2016 (04:08:57 BST) -->
+<serviceGroup>
+    <service name="IServerSaughterHouse">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-only" class="java_t2.Service.skeleton.IServerSaughterHouseMessageReceiverInOnly"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="java_t2.Service.skeleton.IServerSaughterHouseMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">java_t2.Service.skeleton.IServerSaughterHouseSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="recallPack" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://Service.java_t2">
+            <actionMapping>urn:recallPack</actionMapping>
+            <outputActionMapping>urn:recallPackResponse</outputActionMapping>
+        </operation>
+        <operation name="addAnimal" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://Service.java_t2">
+            <actionMapping>urn:addAnimal</actionMapping>
+        </operation>
+        <operation name="addToTray" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://Service.java_t2">
+            <actionMapping>urn:addToTray</actionMapping>
+        </operation>
+        <operation name="getAnimal" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://Service.java_t2">
+            <actionMapping>urn:getAnimal</actionMapping>
+            <outputActionMapping>urn:getAnimalResponse</outputActionMapping>
+        </operation>
+        <operation name="addTray" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://Service.java_t2">
+            <actionMapping>urn:addTray</actionMapping>
+        </operation>
+        <operation name="addPart" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://Service.java_t2">
+            <actionMapping>urn:addPart</actionMapping>
+        </operation>
+        <operation name="getPart" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://Service.java_t2">
+            <actionMapping>urn:getPart</actionMapping>
+            <outputActionMapping>urn:getPartResponse</outputActionMapping>
+        </operation>
+        <operation name="getTray" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://Service.java_t2">
+            <actionMapping>urn:getTray</actionMapping>
+            <outputActionMapping>urn:getTrayResponse</outputActionMapping>
+        </operation>
+        <operation name="addOrder" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://Service.java_t2">
+            <actionMapping>urn:addOrder</actionMapping>
+        </operation>
+        <operation name="makeOrder" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://Service.java_t2">
+            <actionMapping>urn:makeOrder</actionMapping>
+            <outputActionMapping>urn:makeOrderResponse</outputActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

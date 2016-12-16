@@ -1,0 +1,5 @@
+K:\src\java\Projects\SDJ3_Project_SlaughterHouse\Csharp_Client_Side\Client_one\bin\Debug\Client_one.dll
+K:\src\java\Projects\SDJ3_Project_SlaughterHouse\Csharp_Client_Side\Client_one\bin\Debug\Client_one.pdb
+K:\src\java\Projects\SDJ3_Project_SlaughterHouse\Csharp_Client_Side\Client_one\obj\Debug\Client_one.csprojResolveAssemblyReference.cache
+K:\src\java\Projects\SDJ3_Project_SlaughterHouse\Csharp_Client_Side\Client_one\obj\Debug\Client_one.dll
+K:\src\java\Projects\SDJ3_Project_SlaughterHouse\Csharp_Client_Side\Client_one\obj\Debug\Client_one.pdb

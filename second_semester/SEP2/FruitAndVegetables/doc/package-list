@@ -1,0 +1,8 @@
+src.system.controller
+src.system.database
+src.system.domain.mediator
+src.system.domain.model
+src.system.gui
+src.system.gui.result
+src.system.utill
+src.system.view

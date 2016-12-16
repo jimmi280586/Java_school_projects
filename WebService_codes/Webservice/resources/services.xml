@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.7.3  Built on : May 30, 2016 (04:08:57 BST) -->
+<serviceGroup>
+    <service name="Hello">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="interfaces.skeleton.HelloMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">interfaces.skeleton.HelloSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="getHelloText" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://interfaces">
+            <actionMapping>urn:getHelloText</actionMapping>
+            <outputActionMapping>urn:getHelloTextResponse</outputActionMapping>
+        </operation>
+    </service>
+</serviceGroup>
